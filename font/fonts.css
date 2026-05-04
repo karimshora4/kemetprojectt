@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('font.ttf');
+}
+
+/* عشان الخط يتظبط على كل الموقع */
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'MyCustomFont', serif;
+}

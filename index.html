@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemet</title>
+  <link rel="stylesheet" href="font/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="karim1">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="img/eye-of-horus-svgrepo-com (1).svg" alt="Eye of Horus Logo"width="30"height="30">
+            <span>The Grand Portal</span>
+          </a>
+        </li>
+        <li><a href="timeline.html">Chronicles</a></li>
+        <li><a href="gallery.html">Golden Gallery</a></li>
+        <li><a href="museums.html">Royal Museums</a></li>
+        <li><a href="booking.html">Book Journey</a></li>
+        <li><a href="login.html">Eternal Identity</a></li>
+        <li><a href="faq.html">Guidance</a></li>
+        <li><a href="contact.html">Reach Out</a></li>
+        <li class="kr4"><button id="kr3" class="kr1" type="button">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <img src="img/hero.jpg" alt="Ancient Kemet Background">
+      <div class="heroText">
+        <h1>EMBARK ON A JOURNEY THROUGH TIME</h1>
+        <p>Explore the wonders of ancient history</p>
+        <button class="heroBtn" type="button" onclick="openVideo()">START YOUR ADVENTURE</button>
+      </div>
+      <div id="videoContainer">
+        <span onclick="closeVideo()" class="closeBtn">&times;</span>
+        <iframe
+          id="kemetVideo"
+          width="80%"
+          height="450"
+          src="https://www.youtube.com/embed/5-itlcXI8C8?si=-qcU5qre3CwEXggx"
+          title="Kemet Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <section id="introduction" class="mainBox">
+      <h3>OUR SHARED LEGACY: &copy;</h3>
+      <h2>The Legacy of Kemet</h2>
+      <p>The cinematic journey you have just witnessed is merely a glimpse into the vast ocean of <strong>Kemet's</strong> eternal greatness; the land that taught the world the alphabets of civilization. Through this digital platform, we strive to document this ancient human heritage, blending the essence of the past with the technology of the future, as befits the majesty of our ancestors.</p>
+      <p>Explore the most magnificent monuments &amp; museums that continue to reveal their secrets day after day. Navigate through our <em>Interactive Maps</em> to discover that a few minutes are not enough to comprehend a civilization that has stood for thousands of years, transcending the boundaries of time and space.</p>
+    </section>
+    <section id="map-section" class="mainBox">
+      <h3>GLOBAL SITES IMAGE MAP</h3>
+      <p>Click on the map locations to explore our historical treasures</p>
+      <img src="img/map.jpg" usemap="#kemet-map" alt="World Heritage Map" class="mapImg">
+      <map name="kemet-map">
+        <area shape="rect" coords="0,0,500,500" alt="Museums" href="museums.html">
+      </map>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <div id="footer-content">
+      <h3>KEMET | The Grand Portal</h3>
+      <p>&copy; 2026 Kemet Project. All Rights Reserved.<br>Designed with passion for <em>Ancient Egyptian Heritage</em>.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

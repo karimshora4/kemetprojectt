@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemet</title>
+  <link rel="stylesheet" href="font/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="karim1">
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="img/eye-of-horus-svgrepo-com (1).svg" alt="Eye of Horus Logo" width="30" height="30"><span>The Grand Portal</span></a></li>
+        <li><a href="timeline.html">Chronicles</a></li>
+        <li><a href="gallery.html">Golden Gallery</a></li>
+        <li><a href="museums.html">Royal Museums</a></li>
+        <li><a href="booking.html">Book Journey</a></li>
+        <li><a href="login.html">Eternal Identity</a></li>
+        <li><a href="faq.html">Guidance</a></li>
+        <li><a href="contact.html">Reach Out</a></li>
+        <li class="kr4"><button id="kr3" class="kr1" type="button">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="bookPage">
+    <div class="head">
+      <h1>Book Your Ticket</h1>
+      <p>Choose your museum and ticket details</p>
+    </div>
+    <section class="select">
+      <h2>Select Museum</h2>
+      <select class="color">
+        <option>Grand Egyptian Museum</option>
+        <option>Egyptian Museum</option>
+        <option>Alexandria National Museum</option>
+        <option>National Museum Of Egyptian Civilization</option>
+        <option>Nubian Museum</option>
+        <option>Hurghada Museum</option>
+        <option>Imhotep Museum</option>
+        <option>Luxor Museum</option>
+      </select>
+    </section>
+    <section class="details">
+      <h2>Ticket Details</h2>
+      <label for="ticketType">Ticket type</label>
+      <select id="ticketType">
+        <option value="100">Normal</option>
+        <option value="50">Student</option>
+        <option value="200">Tourist</option>
+      </select>
+      <div class="counter">
+        <label>Number of Ticket</label>
+        <button type="button" onclick="decrease()">-</button>
+        <span id="count">1</span>
+        <button type="button" onclick="increase()">+</button>
+      </div>
+    </section>
+    <section class="price">
+      <h2>Price Details</h2>
+      <p>Price per ticket: <span id="price">0</span></p>
+      <p>Number of ticket: <span id="countSummary">0</span></p>
+      <hr>
+      <h2>Total price: <span id="total">0</span></h2>
+      <button type="button" onclick="booknow()" class="button">BOOK Now</button>
+    </section>
+    <section class="information">
+      <h3>Ticket information</h3>
+      <ul>
+        <li>Student ticket: 50 EGP</li>
+        <li>Normal ticket: 100 EGP</li>
+        <li>Tourist ticket: 200 EGP</li>
+        <li>Please keep your ticket</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <div id="footer-content">
+      <h3>KEMET | Book Journey</h3>
+      <p>&copy; 2026 Kemet Project. All Rights Reserved.<br>Designed with passion for <em>Ancient Egyptian Heritage</em>.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

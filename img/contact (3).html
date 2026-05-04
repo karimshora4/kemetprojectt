@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us </title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li>
+            <a href="index.html">
+                <img src="anubis-icon.png" alt="Anubis Logo" width="30" height="30" style="vertical-align: middle;">
+                <span style="vertical-align: middle;">The Grand Portal</span>
+            </a>
+        </li>
+        <li><a href="timeline.html">Chronicles</a></li>
+        <li><a href="gallery.html">Golden Gallery</a></li>
+        <li><a href="museums.html">Royal Museums</a></li>
+        <li><a href="booking.html">Book Journey</a></li>
+        <li><a href="login.html">Eternal Identity</a></li>
+        <li><a href="faq.html">Guidance</a></li>
+        <li><a href="contact.html">Reach Out</a></li>
+        <li class="kr4">
+        <button id="kr3" class="kr1">Dark Mode</button>
+        </li>
+    </ul>
+</nav>
+    <h1 style="text-align: center;"> contact us  </h1>
+    <h2 style="text-align: center;">we would love to hear from you </h2>
+     <div style="display: flex; align-items: center; gap: 150px;">
+    <form action="action_page.php">
+        <label for="yname"> Your name </label> <br>
+        <input type="text" id="yname" value="Enter your name"><br> <br>
+        <label for="email" > Email </label> <br>
+        <input type="text" id="email" value="Enter your email"> <br> <br>
+        <label for="messege" > messege </label> <br>
+        <textarea name="messege" id="messege" rows="4" cols="30">write your messege here</textarea> <br>
+        <button> send messege</button>
+
+    </form>
+    <section style="text-align: center;">
+        <img src="golden-location-pin-icon-on-transparent-background-png" alt="location icon" style="width: 50px; height: 50px;">
+         <span>Capital university,Cairo,Egypt</span> <br> <br> <br>
+         <img src="gold-call-icon-3d-glossy-golden-phone-symbol-with-metallic-shine-and-shadowed-style-for-voice-communication-hotline-and-customer-support-applications-png" alt="phone icon" style="width: 30px; height: 30px;">
+        <span>01095962395</span> <br> <br>
+        <img src="تنزيل (1).png" alt="mail icon" style="width: 60px; " height="60px">
+       <span> Capital university@gmail.com</span>
+
+
+
+    </section>
+      <section style="text-align: right;">
+        <img src="facebook.png" alt="facebook icon" style="width: 50px;" height="50px">
+        <img src="تنزيل (3).png" alt="instgram icon" style="width: 50px;" height="50px">
+        <img src="youtube.png" alt="youtube icon" style="width: 55px;" height="55px" >  
+        <img src="twitter.png" alt="twitter icon" style="width: 55px;" height="55px" >
+
+    </section>
+       
+
+    </div>
+     
+   <hr>
+   <p style="text-align: center; font-size: x-large;">Find us here</p>
+   <div style="text-align: center;"> 
+    <iframe src="https://www.google.com/maps?q=Helwan%20University%20Egypt&output=embed" frameborder="1"
+       height="450"   
+       >
+      
+    </iframe>
+    </div>
+
+
+
+
+ <footer>
+    <hr> <div id="footer-content" style="text-align: center;">
+        <h3>KEMET | contact </h3>
+        
+        <p>
+            &copy; 2026 Kemet Project. All Rights Reserved. <br>
+            Designed with passion for <em>Ancient Egyptian Heritage</em>.
+        </p>
+      
+    </div>
+    </footer>
+   
+    <script>
+  let kr3 = document.getElementById("kr3");
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("kr2");
+    kr3.innerHTML = "Light Mode";
+  }
+
+  kr3.onclick = function () {
+    document.body.classList.toggle("kr2");
+
+    if (document.body.classList.contains("kr2")) {
+      localStorage.setItem("theme", "dark");
+      kr3.innerHTML = "Light Mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      kr3.innerHTML = "Dark Mode";
+    }
+  };
+</script>    
+    
+
+</body>
+
+</html>
