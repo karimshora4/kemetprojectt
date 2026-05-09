@@ -10,7 +10,7 @@ body {
   color: #2b2114;
   text-align: center;
 }
-input, button{
+input, button, select{
   font-family: "Milonga", serif;
 }
 .karim1 {
@@ -65,6 +65,7 @@ nav ul li a:hover {
   cursor: pointer;
   font-weight: bold;
   font-size: 0.85rem;
+  margin-right: 10px;
 }
 footer {
   text-align: center;
@@ -547,8 +548,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
+}
+.details .priceD{
+  font-size: 25px;
+}
+.details .Tprice{
+  font-size: 20px;
+}
+.details .ticketD{
+  margin-bottom: 20px;
 }
 .price {
   min-height: 215px;
@@ -760,9 +770,9 @@ footer {
   line-height: 1.8;
   padding-left: 25px;
 }
-karim9{
+.karim9{
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 body.kr2 {
   background: radial-gradient(circle at 20% 15%, rgba(212, 175, 55, 0.15), transparent 40%), linear-gradient(145deg, #0d1b28 0%, #11283a 45%, #07262B 100%);

@@ -171,7 +171,9 @@ function preparePopup(museumId) {
   }
 }
 let formg = document.querySelector(".formg");
-
+function showSuccessAlert(type){
+  alert(type + "successful!")
+}
 if (formg != null) {
   formg.onsubmit = function (e) {
     e.preventDefault();
@@ -185,6 +187,10 @@ if (formg != null) {
       msg.innerText = "Password must be 5 letters or more";
     } else {
       msg.innerText = "Login success";
+      let loginbtn = document.querySelector(".formBtn");
+      loginbtn.addEventListener("click", function(){
+      showSuccessAlert("Login")
+      });
     }
   };
 }
@@ -204,6 +210,10 @@ if (formr != null) {
       msg.innerText = "Password must be 5 letters or more";
     } else {
       msg.innerText = "Register success";
+      let registerbtn = document.querySelector(".regBtn");
+      registerbtn.addEventListener("click", function(){
+      showSuccessAlert("Registration")
+      });
     }
   };
 }
@@ -219,12 +229,3 @@ if (contactForm != null) {
     }
   });
 }
-
-let loginbtn = document.querySelector(".formBtn");
-loginbtn.addEventListener("click", function(){
-  alert("Successful Login !");
-});
-let registerbtn = document.querySelector(".regBtn");
-registerbtn.addEventListener("click", function(){
-  alert("Registration Successful !")
-});
