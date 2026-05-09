@@ -10,6 +10,9 @@ body {
   color: #2b2114;
   text-align: center;
 }
+input, button{
+  font-family: "Milonga", serif;
+}
 .karim1 {
   background: linear-gradient(135deg, #f3e4bc 0%, #e6cf93 100%);
   color: #2b2114;
@@ -379,7 +382,7 @@ footer {
   width: 300px;
   text-align: center;
   overflow: hidden;
-  transition: transform 0.2s;
+  transition-duration: 0.5s;
   box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 .card-container .card:hover .card-icon {
@@ -540,6 +543,13 @@ footer {
   vertical-align: top;
   margin: 18px 14px;
 }
+.select .selectbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
 .price {
   min-height: 215px;
   padding-top:30px ;
@@ -632,7 +642,7 @@ footer {
   width: 100%;
   padding: 14px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .formBtn {
   font-family: "Milonga", serif;  
@@ -643,8 +653,16 @@ footer {
   background: #bf8733;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+}
+.formBtn a{
+    text-decoration: none;
+    color: white;
+}
+.formArea.formr a{
+  text-decoration: none;
+  color: white;
 }
 .bottomText {
   text-align: center;
@@ -875,6 +893,11 @@ body.kr2 .kr1 {
   width: 170px;
   display: block;
   margin: auto;
+}
+body.kr2 nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body.kr2 .kr4 {

@@ -222,5 +222,9 @@ if (contactForm != null) {
 
 let loginbtn = document.querySelector(".formBtn");
 loginbtn.addEventListener("click", function(){
-  alert("Successful Login");
+  alert("Successful Login !");
+});
+let registerbtn = document.querySelector(".regBtn");
+registerbtn.addEventListener("click", function(){
+  alert("Registration Successful !")
 });
