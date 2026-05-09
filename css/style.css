@@ -39,10 +39,11 @@ nav ul li a {
   padding: 8px 13px;
   border: 1.5px solid #b88a2b;
   border-radius: 999px;
-  font-size: 0.85rem;
   background: rgba(255, 248, 225, 0.7);
   transition: 0.2s;
-  display: inline-block;
+  display: inline-block;  
+  display: flex;
+  align-items: center;
 }
 nav ul li a:hover {
   background: #b88a2b;
@@ -97,6 +98,7 @@ footer {
   margin-bottom: 12px;
 }
 .heroText p {
+  font-size: 20px;
   color: #e8d3a3;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
   font-weight: bold;
@@ -110,6 +112,9 @@ footer {
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
 }
 #videoContainer {
   position: fixed;
@@ -376,11 +381,11 @@ footer {
   overflow: hidden;
   transition: transform 0.2s;
   box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
-  background: white;
 }
 .card-container .card:hover .card-icon {
   opacity: 1;
   transform: translateY(0%);
+  transition-duration: 1s;
 }
 .card-container .card:hover {
   transform: translateY(-5px);
@@ -607,7 +612,7 @@ footer {
   color: #b8975b;
 }
 .formArea {
-  background: white;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 10px;
   text-align: left;
@@ -630,6 +635,8 @@ footer {
   border-radius: 5px;
 }
 .formBtn {
+  font-family: "Milonga", serif;  
+  font-size: 20px;
   width: 100%;
   padding: 14px;
   margin-top: 20px;
@@ -659,6 +666,7 @@ footer {
 .contactWrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 70px;
   margin-top: 25px;
 }
@@ -733,6 +741,10 @@ footer {
 .guideBox ul {
   line-height: 1.8;
   padding-left: 25px;
+}
+karim9{
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 body.kr2 {
   background: radial-gradient(circle at 20% 15%, rgba(212, 175, 55, 0.15), transparent 40%), linear-gradient(145deg, #0d1b28 0%, #11283a 45%, #07262B 100%);

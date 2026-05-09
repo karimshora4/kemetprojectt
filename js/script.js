@@ -219,3 +219,8 @@ if (contactForm != null) {
     }
   });
 }
+
+let loginbtn = document.querySelector(".formBtn");
+loginbtn.addEventListener("click", function(){
+  alert("Successful Login");
+});
