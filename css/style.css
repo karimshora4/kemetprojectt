@@ -54,7 +54,7 @@ nav ul li a:hover {
 }
 nav ul li a.active{
   color: white;
-  background-color: #dab336;
+  background-color: #b88a2b;
 }
 .kr4 {
   margin-left: auto;
@@ -106,6 +106,8 @@ footer {
 .showTitle{
   transform: translateY(0);
   opacity: 1;
+  top: 50%;
+  left: 0%;
 }
 .heroText h1 {
    color: #f5e6c8;

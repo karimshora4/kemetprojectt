@@ -223,14 +223,8 @@ if (contactForm != null) {
   });
 }
 
-function showSuccessAlert(type){
-  alert(type + "successful!")
-}
+
 let loginbtn = document.querySelector(".formBtn");
 loginbtn.addEventListener("click", function(){
-  showSuccessAlert("Login")
-});
-let registerbtn = document.querySelector(".regBtn");
-registerbtn.addEventListener("click", function(){
-  showSuccessAlert("Registration")
+  alert("Success Your Request Has Been Processed!")
 });
