@@ -52,6 +52,10 @@ nav ul li a:hover {
   background: #b88a2b;
   color: white;
 }
+nav ul li a.active{
+  color: white;
+  background-color: #dab336;
+}
 .kr4 {
   margin-left: auto;
 }
@@ -95,6 +99,13 @@ footer {
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: 2;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.showTitle{
+  transform: translateY(0);
+  opacity: 1;
 }
 .heroText h1 {
    color: #f5e6c8;
