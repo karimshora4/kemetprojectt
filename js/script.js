@@ -189,7 +189,7 @@ if (formg != null) {
     } else {
       console.log("here");
       msg.innerText = "Login success";
-      alert("Success Your Request Has Been Processed!!");
+      alert("Success Your Request Has Been Processed!");
       window.location.href = "index.html";
     }
   };
