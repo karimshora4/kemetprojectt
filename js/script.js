@@ -187,7 +187,6 @@ if (formg != null) {
     } else if (inputs[1].value.length < 5) {
       msg.innerText = "Password must be 5 letters or more";
     } else {
-      console.log("here");
       msg.innerText = "Login success";
       alert("Success Your Request Has Been Processed!");
       window.location.href = "index.html";
