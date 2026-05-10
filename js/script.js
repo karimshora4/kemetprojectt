@@ -209,6 +209,8 @@ if (formr != null) {
       msg.innerText = "Password must be 5 letters or more";
     } else {
       msg.innerText = "Register success";
+      alert("Success Your Request Has Been Processed!!");
+      window.location.href = "index.html";
     }
   };
 }
