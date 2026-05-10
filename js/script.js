@@ -188,7 +188,7 @@ if (formg != null) {
       msg.innerText = "Password must be 5 letters or more";
     } else {
       msg.innerText = "Login success";
-      alert("Success Your Request Has Been Processed!");
+      alert("Success Your Request Has Been Processed!!");
     }
   };
 }
