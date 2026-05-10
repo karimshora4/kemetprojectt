@@ -189,6 +189,7 @@ if (formg != null) {
     } else {
       msg.innerText = "Login success";
       alert("Success Your Request Has Been Processed!!");
+      window.location.href = "index.html";
     }
   };
 }
