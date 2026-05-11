@@ -72,12 +72,14 @@ nav ul li a.active{
   margin-right: 10px;
 }
 footer {
+  border-top: #d8b540, 2px, solid;
   text-align: center;
   margin-top: 10px;
   padding: 15px;
   color: #8a641f;
 }
 #footer-content h3 {
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 #hero {
@@ -926,8 +928,13 @@ body.kr2 nav ul li a{
 body.kr2 .kr4 {
   margin-left: 0;
 }
-
-body.kr2 main,
 body.kr2 footer {
   margin-left: 230px;
+}
+body.kr2 main.bookPage,
+body.kr2 main.guide{
+  margin-left: 400px;
+}
+body.kr2 main.contactPage{
+  margin-left: 355px;
 }
